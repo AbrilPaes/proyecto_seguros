@@ -1,3 +1,6 @@
+#Abril Pacheco Espinosa 
+#11/Mayo/2024
+
 import pandas as pd
 import numpy as np
 import datetime
@@ -165,7 +168,7 @@ def main():
     accuracy = accuracy_score(y_test, y_pred)
     st.write(f"\nPrecisión del modelo: {accuracy:.2f}")
 
-    #Entrada de datos
+    #Entrada de datos para hacer simulaciones a nuestro gusto
     form = st.form(key='insurance_form')
     coverage_type = form.selectbox('Tipo de cobertura', df['Tipo de cobertura'].unique())
     car_model = form.selectbox('Modelo del coche', df['Modelo del coche'].unique())
