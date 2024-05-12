@@ -55,7 +55,7 @@ def generate_insurance_data(n_cases):
         'Gastos médicos': np.random.choice(2, size=n_cases),
         'Daños a terceros': np.random.choice(2, size=n_cases)
     }
-
+    #
     # Crear DataFrame
     df = pd.DataFrame(data)
     # Agregar columna 'Año' a partir de 'Fecha de inicio'
